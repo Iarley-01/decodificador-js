@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
+  </head>
+  <body>
+    <header>
+      <img src="./src/assets/alura-logo.svg" alt="Logo da Alura">
+    </header>
+    
+    <main>
+      <section class="input-container">
+        <textarea name="" id="input-box" cols="30" rows="4" placeholder="Digite seu texto aqui"></textarea>
+        
+        <div class="info">
+          <img src="./src/assets/alert-icon.svg" alt="">
+          <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+        
+        <div class="buttons">
+          <button id="btn-criptografar" onclick="criptografar()">Criptografar</button>
+          <button id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+          </div>
+      </section>
+      
+      <section class="visualizacao">
+        <div class="output-area">
+          <textarea name="" id="output-view" cols="30" rows="10">
+          </textarea>
+          <button id="btn-copiar" onclick="copyText()">Copiar</button>
+        </div>
+        
+        <div id="remove-image" class="visualizacao-conteudo">
+          <img src="./src/assets/high-quality-products.svg" alt="">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>Digite um texto que voce queira criptografar ou descriptografar</p>
+        </div>
+      </section>
+    </main>
+    
+    <script src="./src/scripts/script.js" defer></script>
+  </body>
+</html>
